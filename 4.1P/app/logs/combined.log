@@ -1,2 +1,5 @@
 {"level":"info","message":"POST /add","service":"calculator-microservice"}
 {"body":{"a":"10","b":"5"},"hostname":"jarvis","ip":"::1","level":"info","message":"Incoming request","method":"POST","service":"calculator-microservice","timestamp":"2025-03-26T14:36:56.317Z","url":"/add","userAgent":"PostmanRuntime/7.43.0"}
+{"body":{"a":"10","b":"5"},"hostname":"jarvis","ip":"::1","level":"info","message":"Incoming request","method":"POST","service":"calculator-microservice","timestamp":"2025-03-26T14:44:55.980Z","url":"/add","userAgent":"PostmanRuntime/7.43.0"}
+{"body":{"a":"10","b":"5"},"hostname":"jarvis","ip":"::1","level":"info","message":"Incoming request","method":"POST","service":"calculator-microservice","timestamp":"2025-03-26T14:46:31.381Z","url":"/add","userAgent":"PostmanRuntime/7.43.0"}
+{"body":{"a":"10","b":"5"},"hostname":"jarvis","ip":"::1","level":"info","message":"Incoming request","method":"POST","service":"calculator-microservice","timestamp":"2025-03-26T14:46:39.014Z","url":"/subtract","userAgent":"PostmanRuntime/7.43.0"}

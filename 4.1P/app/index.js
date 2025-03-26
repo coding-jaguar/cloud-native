@@ -6,7 +6,6 @@ import os from "os";
 const app = express();
 app.use(express.json());
 
-// 🛠️ Winston Logger Configuration
 const logger = winston.createLogger({
   level: "info",
   format: winston.format.combine(
@@ -23,9 +22,10 @@ const logger = winston.createLogger({
   ],
 });
 
-// 🌐 Middleware to log advanced request info
 app.use((req, res, next) => {
-  const logDetails = {
+  logger.log({
+    level: "info",
+    message: "Incoming request",
     timestamp: new Date().toISOString(),
     method: req.method,
     url: req.originalUrl,
@@ -33,13 +33,10 @@ app.use((req, res, next) => {
     userAgent: req.headers["user-agent"],
     hostname: os.hostname(),
     body: req.body,
-  };
-
-  logger.info("Incoming request", logDetails);
+  });
   next();
 });
 
-// 🧮 Calculator endpoints
 app.post("/add", (req, res) => {
   const a = parseInt(req.body.a);
   const b = parseInt(req.body.b);
