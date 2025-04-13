@@ -12,7 +12,7 @@ This project demonstrates containerising a simple Node.js web application using 
 
 ## 📦 Steps
 
-1. **Create Node.js App** (`app.js`, `package.json`)
+1. **Create Node.js App** (`index.js`, `package.json`)
 2. **Write Dockerfile**: Defines environment and build process.
 3. **Docker Compose**: Handles multi-container setup and health check.
 4. **Health Check**: Ensures app is responsive; container restarts if unhealthy.
